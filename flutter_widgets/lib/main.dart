@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/cirular_list/circle_list_widget.dart';
+import 'package:flutter_widgets/cirular_list/circular_animated_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const CircularListWidget(),
+      //home: const CircularListWidget(),
+      home: MyCircularListWidget(),
     );
   }
 }

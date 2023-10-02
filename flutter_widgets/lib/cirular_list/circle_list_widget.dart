@@ -1,7 +1,6 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
-
 class CircularList extends StatelessWidget {
   final List<Widget> items;
 
@@ -29,8 +28,15 @@ class CircularList extends StatelessWidget {
   }
 }
 
-class CircularListWidget extends StatelessWidget {
+
+class CircularListWidget extends StatefulWidget {
   const CircularListWidget({super.key});
+
+  @override
+  State<CircularListWidget> createState() => _CircularListWidgetState();
+}
+
+class _CircularListWidgetState extends State<CircularListWidget> {
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +47,7 @@ class CircularListWidget extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.red,
         centerTitle: true,
-        title: Text('Circular List'),
+        title: const Text('Circular List'),
       ),
       body: Center(
         child: Column(
