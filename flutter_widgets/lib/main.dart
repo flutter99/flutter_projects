@@ -3,6 +3,7 @@ import 'package:flutter_widgets/calculator/calculator_widget.dart';
 import 'package:flutter_widgets/calculator/providers/calculator_provider.dart';
 import 'package:flutter_widgets/cirular_list/circle_list_widget.dart';
 import 'package:flutter_widgets/cirular_list/circular_animated_list.dart';
+import 'package:flutter_widgets/learning/listview.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -28,7 +29,8 @@ class MyApp extends StatelessWidget {
         ),
         //home: const CircularListWidget(),
         //home: MyCircularListWidget(),
-        home: CalculatorWidget(),
+        //home: CalculatorWidget(),
+        home: ListWidget(),
       ),
     );
   }
